@@ -1,13 +1,9 @@
 import os
-import urllib
 
 import wptools
-import cairosvg
 import pubchempy as pcp
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPM
+from PIL import Image, ImageDraw
 
-from wikidata.client import Client
 
 def generateFlashCardSet(name):
     try:
@@ -18,15 +14,33 @@ def generateFlashCardSet(name):
 
     with open('entities', "r") as file:
         for substance in file:
-            substance = substance.strip()
             if substance[0] == "#":
                 continue
             if substance[0] == "!":
                 break
+            substance = substance.split('/')
+            substance_eng = substance[1].strip()
+            substance = substance[0].strip()
 
             print(f"Fetching {substance}...")
 
-            pcp.download('PNG', f"out/{name}/images/{substance}.jpg", substance, 'name')
+            # IMAGE
+
+            img_path = f"out/{name}/images/{substance}.png"
+            pcp.download('PNG', 'tmp.png', substance_eng, 'name', overwrite=True, image_size='large')
+
+            im = Image.open("tmp.png").convert('RGBA')
+            newImage = []
+            for item in im.getdata():
+                if item[:3] == (245, 245, 245):
+                    newImage.append((255, 255, 255, 0))
+                else:
+                    newImage.append(item)
+            im.putdata(newImage)
+
+            im.save(img_path)
+
+            # STUFF
 
             page = wptools.page(substance, lang='de', silent=True)
             infobox = page.get_parse().data['infobox']
@@ -53,39 +67,6 @@ def generateFlashCardSet(name):
             except:
                 other_names = None
 
-            # try:
-            #     image = query.data['image'][0]
-            #     image_name = os.path.splitext(image['orig'])
-            #     image_path = f"out/{name}/images/{image_name[0]}"
-            #     if image_name[1] == '.svg':
-            #         urllib.request.urlretrieve(image['url'], f"{image_path}.svg")
-            #         cairosvg.svg2png(url=f"{image_path}.svg", write_to=f"{image_path}.png")
-            #     else:
-            #         urllib.request.urlretrieve(image['url'], f"{image_path}.{image_name[1]}")
-            # except:
-            #     print("Need to do except")
-            #     page = wikipedia.page(substance)
-            #     image = infobox['Strukturformel']
-            #     image_name = image[image.find(':') + 1: image.find('|')]
-            #     image_name = os.path.splitext(image_name.replace(' ', '_'))
-            #     image_path = f"out/{name}/images/{image_name[0]}"
-            #
-            #     for image in page.images:
-            #         if image_name[0] in image:
-            #             image_url = image
-            #             if image_name[1] == '.svg':
-            #                 urllib.request.urlretrieve(image_url, f"out/{name}/images/{image_name[0]}.svg")
-            #                 try:
-            #                     cairosvg.svg2png(url=f"{image_path}.svg", write_to=f"{image_path}.png")
-            #                 except:
-            #                     print("Couldn't do stuff")
-            #             else:
-            #                 urllib.request.urlretrieve(image_url, f"out/{name}/images/{image_name[0]}.{image_name[1]}")
-            #             break
-            #     else:
-            #         print(f"Image: {image_name[0]} was not found")
-
-            # MARKDOWN GENERATION
             text = f"\n--- \n**Que:** {substance}\n\n"
 
             text += f"**Ans:**\n"
