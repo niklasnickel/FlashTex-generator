@@ -18,31 +18,30 @@ def generateFlashCardSet(name):
                 continue
             if substance[0] == "!":
                 break
-            substance = substance.split('/')
-            substance_eng = substance[1].strip()
-            substance = substance[0].strip()
 
-            print(f"Fetching {substance}...")
+            substance = substance.split('/')
+            substance_ger = substance[0].strip()
+            substance_eng = substance[1].strip() if len(substance) == 2 else f"{substance_ger}e"
+
+            print(f"Fetching {substance_ger}...")
 
             # IMAGE
 
-            img_path = f"out/{name}/images/{substance}.png"
+            img_path = f"out/{name}/images/{substance_eng}.png"
             pcp.download('PNG', 'tmp.png', substance_eng, 'name', overwrite=True, image_size='large')
 
             im = Image.open("tmp.png").convert('RGBA')
+            color = (245, 245, 245)
             newImage = []
             for item in im.getdata():
-                if item[:3] == (245, 245, 245):
-                    newImage.append((255, 255, 255, 0))
-                else:
-                    newImage.append(item)
+                alpha = max(abs(item[0] - color[0]), abs(item[1] - color[1]), abs(item[2] - color[2]))
+                newImage.append((item[0], item[1], item[2], alpha))
             im.putdata(newImage)
-
             im.save(img_path)
 
             # STUFF
 
-            page = wptools.page(substance, lang='de', silent=True)
+            page = wptools.page(substance_ger, lang='de', silent=True)
             infobox = page.get_parse().data['infobox']
             query = page.get_query()
 
@@ -67,13 +66,13 @@ def generateFlashCardSet(name):
             except:
                 other_names = None
 
-            text = f"\n--- \n**Que:** {substance}\n\n"
+            text = f"\n--- \n**Que:** {substance_ger}\n\n"
 
             text += f"**Ans:**\n"
             if description is not None:
                 text += f"{description}\n"
 
-            text += f"![](images/{substance}.png)\n"
+            text += f"![](images/{substance_eng}.png)\n"
 
             if other_names is not None:
                 text += f"\n**Andere Namen:**\n"
