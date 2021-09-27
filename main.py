@@ -5,7 +5,7 @@ import pubchempy as pcp
 from PIL import Image, ImageDraw
 
 
-def generateFlashCardSet(name):
+def generateFlashCardSet(name, caching=False):
     try:
         os.makedirs(f'out/{name}/images')
     except:
@@ -22,13 +22,21 @@ def generateFlashCardSet(name):
             substance = substance.split('/')
             substance_ger = substance[0].strip()
             substance_eng = substance[1].strip() if len(substance) == 2 else f"{substance_ger}e"
-
-            print(f"Fetching {substance_ger}...")
+            substance_eng = substance_eng if substance_eng != '' else substance_ger
+            substance_img = substance_eng.replace(' ', '_')
 
             # IMAGE
 
-            img_path = f"out/{name}/images/{substance_eng}.png"
-            pcp.download('PNG', 'tmp.png', substance_eng, 'name', overwrite=True, image_size='large')
+            img_path = f"out/{name}/images/{substance_img}.png"
+            if caching and os.path.exists(img_path):
+                continue
+
+            print(f"Fetching {substance_ger} ({substance_eng})...")
+            try:
+                pcp.download('PNG', 'tmp.png', substance_eng, 'name', overwrite=True, image_size='large')
+            except:
+                print(f"Couldn't download image for {substance_eng}")
+                continue
 
             im = Image.open("tmp.png").convert('RGBA')
             color = (245, 245, 245)
@@ -39,7 +47,7 @@ def generateFlashCardSet(name):
             im.putdata(newImage)
             im.save(img_path)
 
-            # STUFF
+            # INFORMATION
 
             page = wptools.page(substance_ger, lang='de', silent=True)
             infobox = page.get_parse().data['infobox']
@@ -55,39 +63,38 @@ def generateFlashCardSet(name):
                      'Brechungsindex']
             disp_infobox = dict((k, infobox[k]) for k in items if k in infobox)
 
-            summary = query.data['extext']
-            try:
-                description = infobox['Beschreibung']
-            except:
-                description = None
+            summary = query.data['extext'].replace('\n\n', ' <br> ').replace('\n', ' ')
 
-            try:
-                other_names = infobox['Andere Namen']
-            except:
-                other_names = None
+            # GENERATE MARKDOWN
 
-            text = f"\n--- \n**Que:** {substance_ger}\n\n"
+            text = f"\n--- \n**Que:** {substance_ger}"
+            if substance_eng != substance_ger:
+                text += f"\n{substance_eng}"
+            text += "\n\n"
 
             text += f"**Ans:**\n"
-            if description is not None:
-                text += f"{description}\n"
+            try:
+                text += f"{infobox['Beschreibung']}\n"
+            except:
+                print(f"Couldn't print description for {substance_ger}")
 
-            text += f"![](images/{substance_eng}.png)\n"
+            text += f"![](images/{substance_img}.png)\n"
 
-            if other_names is not None:
-                text += f"\n**Andere Namen:**\n"
-                text += f"{other_names}\n"
+            try:
+                text += f"\n# Andere Namen:\n{infobox['Andere Namen']}\n"
+            except:
+                print(f"Couldn't print alternative names for {substance_ger}")
 
-            text += f"\n**Informationen:**\n"
+            text += f"\n# Informationen: \n"
             for key, value in disp_infobox.items():
                 text += f"- {key}: {value}\n"
 
-            text += f"\n**Beschreibung:**\n"
-            text += f"{summary}\n"
+            text += f"\n# Beschreibung:\n{summary}\n"
+            text += f"[↗︎ Wikipedia]({query.data['url']})\n"
 
             markdown += text
 
-        markdown += "---"
+        markdown += "\n---"
 
         replacements = {
             "[[Grad Celsius|°C]]": "°C",
@@ -111,7 +118,7 @@ def generateFlashCardSet(name):
 test_substances = [
     'Phenol', 'Anilin', 'Benzaldehyd', 'Glycin', 'Salicylsäure', 'Calciumcarbonat', 'Blausäure'
 ]
-generateFlashCardSet('TestSubstances')
+generateFlashCardSet('TestSubstances', caching=True)
 
 # Aminosäuren
 # amino_acids = [
