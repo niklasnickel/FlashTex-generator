@@ -56,6 +56,8 @@ def generateFlashCardSet(name, caching=False):
 
             page = wptools.page(substance_ger, lang='de', silent=True)
             infobox = page.get_parse().data['infobox']
+            if infobox is None:
+                print(f"-> Couldn't fetch infobox for {substance_ger}")
             query = page.get_query()
 
             items = ['Summenformel',

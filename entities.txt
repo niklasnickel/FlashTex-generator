@@ -1,104 +1,104 @@
 # C1
-Tetrachlormethan
-Bromoform/
-Chloroform/
-Iodoform/
+Tetrachlormethan/e
+Bromoform
+Chloroform
+Iodoform
 Blausäure / Hydrogen Cyanide
 Isocyansäure / Isocyanic acid
-Dichlormethan
-Diazomethan
-Formaldehyd
+Dichlormethan/e
+Diazomethan/e
+Formaldehyd/e
 Methansäure / Isocyanic acid
 Kohlensäure / Carbonic acid
 Chlormethan / Chloromethane
-Nitromethan
-Methan
+Nitromethan/e
+Methan/e
 Harnstoff / Urea
 Thioharnstoff / Thiourea
-Methanol/
-Methylamin
-Guanidin
+Methanol
+Methylamin/e
+Guanidin/e
 #
 # C2
-Ethin
-Ethenon
-Glyoxal/
+Ethin/e
+Ethenon/e
+Glyoxal
 Oxalsäure / Oxalic acid
-Acetonitril
-Ethen
-Ethylenoxid
+Acetonitril/e
+Ethen/e
+Ethylenoxid/e
 Essigsäure / Acetic acid
-Glycin
-Ethan
-Ethanol/
-Dimethylether/
+Glycin/e
+Ethan/e
+Ethanol
+Dimethylether
 Ethylenglykol/Ethyleneglycole
 #
 # C3
 Kohlenstoffsuboxid / Carbon suboxide
 Brenztraubensäure / Pyruvic acid
 Malonsäure / Malonic acid
-Acrylamid
-Nitroglycerin
-Aceton
+Acrylamid/e
+Nitroglycerin/e
+Aceton/e
 Propionsäure / Propionic acid
 Milchsäure / Lactic acid
-Dimethylformamid
-Alanin
-Cystein
-Propan
+Dimethylformamid/e
+Alanin/e
+Cystein/e
+Propan/e
 1-Propanol
 Isopropanol
 #
 # C4
-Pyrimidin
+Pyrimidin/e
 Furan
-Diketen
-Maleinsäure 
-Fumarsäure
+Diketen/e
+Maleinsäure / Maleic acid
+Fumarsäure / Fumaric acid
 Thiophen
-Cytosin
-Schweinfurter Grün
+Cytosin/e
+Schweinfurter Grün / Paris green
 Allantoin
-Bernsteinsäure
-Äpfelsäure
-Weinsäure
-Senfgas
+Bernsteinsäure / Succinic acid
+Äpfelsäure / Malic acid
+Weinsäure / Tartaric acid
+Senfgas / Mustard gas
 Tetrahydrofuran
-Buttersäure
-Butan
+Buttersäure / Butyric acid
+n-Butan/e
+Isobutan/e
 Diethylether
 Putrescin
 Urotropin
 #
 # C5
-Purin
-Hypoxanthin
-Xanthin
-Harnsäure
-Pyridin
-Adenin
-Guanin
-Cyclopentadien
+Purin/e
+Hypoxanthin/e
+Xanthin/e
+Harnsäure / Uric acid
+Pyridin/e
+Adenin/e
+Guanin/e
+Cyclopentadien/e
 Ribose
 Tabun
-Pentan
+n-Pentan/e
 #
 # C6
-Chlorbenzol C6H5-Cl
-Nicotinsäure
-Benzol
-Phenol
-Acetylendicarbonsäuredimethylester
-Aconitsäure
+Chlorbenzol
+Nicotinsäure / Niacin
+Benzol / Benzene
+Phenol/e
+Aconitsäure / Aconitic acid
 Anilin
 Vitamin C
 Zitronensäure / Citric acid
-Diketogulonsäure
-Schleimsäure
-Capronsäure
-Mevalonsäure
-Glucose
+# Diketogulonsäure !!!
+Schleimsäure / Mucic acid
+Capronsäure / Capronic acid
+Mevalonsäure / Mevalonic acid
+# Glucose !!!
 Fructose
 Mannose
 Hexan
@@ -108,88 +108,92 @@ Mannit
 Trinitrotoluol
 Tetryl
 Benzaldehyd
-Benzoesäure
+Benzoesäure / Benzoic acid
 Salicylaldehyd
-Salicylsäure
-Gallussäure
+Salicylsäure / Salicylic acid
+Gallussäure / Gallic acid
 Toluol
 Anisol
-Toluidin
-Shikimisäure
-Diacetin
-Chinasäure
+o-Toluidin
+m-Toluidin
+p-Toluidin
+Shikimisäure / Shikimic acid
+Diacetin / Glyceryl diacetate
+Chinasäure / Quinic acid
 Cycloheptan
 Methylcyclohexan
 Heptan
 #
 # C8
-Phthalsäureanhydrid
-Phthalsäure
+Phthalsäureanhydrid / Phtalic anhydride
+Phthalsäure / Phthalic acid
+Isophthalsäure / Isophthalic acid
+Terephthalsäure / Terephthalic acid
 Indol
 Styrol
 Acetophenon
 Vanillin
 Acetaminophen
-Xylol
+# Xylol !!!
 Coffein
 Aciclovir
-Caprylsäure
+Caprylsäure / Caprylic acid
 Octan
 Octanol
 #
 # C9
-Zimtsäure
+Zimtsäure / Cinnamic acid
 Adrenochrom
 Phenylalanin
 Tyrosin
-Mesitylen
-Nonan
-
+Mesitylen/e
+Nonan/e
+#
 # C10
-CS-Gas
+CS-Gas / 2-Chlorobenzylidenemalononitrile
 Naphthalin
-Ferrocen
-Dicyclopentadien
+Ferrocen/e
+Dicyclopentadien/e
 Thymol
 Nicotin
-Caprinsäure
-Decan
-
+Caprinsäure / Capric acid
+Decan/e
+#
 # C11-20
 Nitrofen
-Diphenylamin
+Diphenylamin/e
 Thiamin
-Laurinsäure
-Acridin
+Laurinsäure / Lauric acid
+Acridin/e
 Anthracen
-Lidocain
-Myristinsäure
-Bisphenol
+Lidocain/e
+Myristinsäure / Myristic acid
+# Bisphenol !!!
 Indigo
 Porphin
-Methylenblau
-Hyoscyamin
-Morphin
+Methylenblau / Methylene blue
+Morphin/e
 Capsaicin
 Thebain
 #
 # C20-100
 Fuchsin
 Chinin
-Lysergsäurediethylamidtartrat
+Lysergsäurediethylamidtartrat / Lysergic acid diethylamide
 Retinol
-Abietinsäure
-Marrubiin
+Abietinsäure / Abietic acid
 Tetrahydrocannabinol
-n-Tetracosan
-Calciferol
-Tocopherol
+Tetracosan/e
+Ergocalciferol
+Cholecalciferol
+# Tocopherol
 Squalen
 Phyllochinon
-DL-α-Tocopherylacetat
+# DL-α-Tocopherylacetat
 Bilirubin
 Cyanocobalamin
 #
+!
 # Polymere
 Polytetrafluorethen
 Polymethylmethacrylat
