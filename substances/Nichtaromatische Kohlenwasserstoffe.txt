@@ -6,8 +6,9 @@ Propan/e
 n-Butan/e
 Isobutan/e
 n-Pentan/e
-Cycloheptan/e
 Hexan/e
+Cycloheptan/e
+Methylcyclohexan
 Heptan/e
 Octan/e
 Nonan/e

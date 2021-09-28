@@ -1,14 +1,8 @@
 # C1
-Tetrachlormethan/e
-Bromoform
-Chloroform
-Iodoform
 Blausäure / Hydrogen Cyanide
 Isocyansäure / Isocyanic acid
-Dichlormethan/e
 Diazomethan/e
 Formaldehyd/e
-Ameisensäure / Formic acid
 Kohlensäure / Carbonic acid
 Chlormethan / Chloromethane
 Nitromethan/e
@@ -21,23 +15,17 @@ Guanidin/e
 # C2
 Ethenon/e
 Glyoxal
-Oxalsäure / Oxalic acid
 Acetonitril/e
 Ethylenoxid/e
-Essigsäure / Acetic acid
 Ethanol
 Dimethylether
 Ethylenglykol/Ethyleneglycole
 #
 # C3
 Kohlenstoffsuboxid / Carbon suboxide
-Brenztraubensäure / Pyruvic acid
-Malonsäure / Malonic acid
 Acrylamid/e
 Nitroglycerin/e
 Aceton/e
-Propionsäure / Propionic acid
-Milchsäure / Lactic acid
 Dimethylformamid/e
 1-Propanol
 Isopropanol
@@ -46,18 +34,12 @@ Isopropanol
 Pyrimidin/e
 Furan
 Diketen/e
-Maleinsäure / Maleic acid
-Fumarsäure / Fumaric acid
 Thiophen
 Cytosin/e
 Schweinfurter Grün / Paris green
 Allantoin
-Bernsteinsäure / Succinic acid
-Äpfelsäure / Malic acid
-Weinsäure / Tartaric acid
 Senfgas / Mustard gas
 Tetrahydrofuran
-Buttersäure / Butyric acid
 Diethylether
 Putrescin
 Urotropin
@@ -74,44 +56,20 @@ Cyclopentadien/e
 Tabun
 #
 # C6
-Chlorbenzol
 Nicotinsäure / Niacin
-Benzol / Benzene
-Phenol/e
-Aconitsäure / Aconitic acid
-Anilin
 Vitamin C
-Zitronensäure / Citric acid
 # Diketogulonsäure !!!
-Schleimsäure / Mucic acid
-Capronsäure / Capronic acid
-Mevalonsäure / Mevalonic acid
-
 Mannit
 #
 # C7
-Trinitrotoluol
 Tetryl
-Benzaldehyd
-Benzoesäure / Benzoic acid
 Salicylaldehyd
-Salicylsäure / Salicylic acid
-Gallussäure / Gallic acid
-Toluol
 Anisol
-o-Toluidin
-m-Toluidin
-p-Toluidin
 Shikimisäure / Shikimic acid
 Diacetin / Glyceryl diacetate
 Chinasäure / Quinic acid
-Methylcyclohexan
 #
 # C8
-Phthalsäureanhydrid / Phtalic anhydride
-Phthalsäure / Phthalic acid
-Isophthalsäure / Isophthalic acid
-Terephthalsäure / Terephthalic acid
 Indol
 Styrol
 Acetophenon
@@ -136,17 +94,14 @@ Ferrocen/e
 Dicyclopentadien/e
 Thymol
 Nicotin
-Caprinsäure / Capric acid
 #
 # C11-20
 Nitrofen
 Diphenylamin/e
 Thiamin
-Laurinsäure / Lauric acid
 Acridin/e
 Anthracen
 Lidocain/e
-Myristinsäure / Myristic acid
 # Bisphenol !!!
 Indigo
 Porphin
@@ -158,16 +113,9 @@ Thebain
 # C20-100
 Fuchsin
 Chinin
-Lysergsäurediethylamidtartrat / Lysergic acid diethylamide
 Retinol
-Abietinsäure / Abietic acid
-Tetrahydrocannabinol
 Tetracosan/e
-Ergocalciferol
-Cholecalciferol
 # Tocopherol
 Squalen
-Phyllochinon
 # DL-α-Tocopherylacetat
 Bilirubin
-Cyanocobalamin
