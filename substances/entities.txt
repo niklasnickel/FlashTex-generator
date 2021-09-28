@@ -8,11 +8,10 @@ Isocyansäure / Isocyanic acid
 Dichlormethan/e
 Diazomethan/e
 Formaldehyd/e
-Methansäure / Isocyanic acid
+Ameisensäure / Formic acid
 Kohlensäure / Carbonic acid
 Chlormethan / Chloromethane
 Nitromethan/e
-Methan/e
 Harnstoff / Urea
 Thioharnstoff / Thiourea
 Methanol
@@ -20,16 +19,12 @@ Methylamin/e
 Guanidin/e
 #
 # C2
-Ethin/e
 Ethenon/e
 Glyoxal
 Oxalsäure / Oxalic acid
 Acetonitril/e
-Ethen/e
 Ethylenoxid/e
 Essigsäure / Acetic acid
-Glycin/e
-Ethan/e
 Ethanol
 Dimethylether
 Ethylenglykol/Ethyleneglycole
@@ -44,9 +39,6 @@ Aceton/e
 Propionsäure / Propionic acid
 Milchsäure / Lactic acid
 Dimethylformamid/e
-Alanin/e
-Cystein/e
-Propan/e
 1-Propanol
 Isopropanol
 #
@@ -66,8 +58,6 @@ Weinsäure / Tartaric acid
 Senfgas / Mustard gas
 Tetrahydrofuran
 Buttersäure / Butyric acid
-n-Butan/e
-Isobutan/e
 Diethylether
 Putrescin
 Urotropin
@@ -81,9 +71,7 @@ Pyridin/e
 Adenin/e
 Guanin/e
 Cyclopentadien/e
-Ribose
 Tabun
-n-Pentan/e
 #
 # C6
 Chlorbenzol
@@ -98,10 +86,7 @@ Zitronensäure / Citric acid
 Schleimsäure / Mucic acid
 Capronsäure / Capronic acid
 Mevalonsäure / Mevalonic acid
-# Glucose !!!
-Fructose
-Mannose
-Hexan
+
 Mannit
 #
 # C7
@@ -120,9 +105,7 @@ p-Toluidin
 Shikimisäure / Shikimic acid
 Diacetin / Glyceryl diacetate
 Chinasäure / Quinic acid
-Cycloheptan
 Methylcyclohexan
-Heptan
 #
 # C8
 Phthalsäureanhydrid / Phtalic anhydride
@@ -138,16 +121,13 @@ Acetaminophen
 Coffein
 Aciclovir
 Caprylsäure / Caprylic acid
-Octan
 Octanol
 #
 # C9
 Zimtsäure / Cinnamic acid
 Adrenochrom
-Phenylalanin
 Tyrosin
 Mesitylen/e
-Nonan/e
 #
 # C10
 CS-Gas / 2-Chlorobenzylidenemalononitrile
@@ -157,7 +137,6 @@ Dicyclopentadien/e
 Thymol
 Nicotin
 Caprinsäure / Capric acid
-Decan/e
 #
 # C11-20
 Nitrofen
@@ -192,18 +171,3 @@ Phyllochinon
 # DL-α-Tocopherylacetat
 Bilirubin
 Cyanocobalamin
-#
-!
-# Polymere
-Polytetrafluorethen
-Polymethylmethacrylat
-Polyethen
-Polypropen
-Polyvinylchlorid
-Polyethylenglykol
-Polycarbonat
-Polyethylenterephthalat
-Polystyrol
-Perolon / Polycaprolactam
-Nylon
-Cellulose

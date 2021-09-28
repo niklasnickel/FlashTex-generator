@@ -13,7 +13,7 @@ def generateFlashCardSet(name, caching=False):
         print("Overwriting existing card set!")
     markdown = f"# {name}\n"
 
-    with open('entities.txt', "r") as file:
+    with open('substances/entities.txt', "r") as file:
         for substance in file:
             if substance[0] == "#":
                 continue
