@@ -13,7 +13,7 @@ def generateFlashCardSet(name, caching=False):
         print("Overwriting existing card set!")
     markdown = f"# {name}\n"
 
-    with open('entities', "r") as file:
+    with open('entities.txt', "r") as file:
         for substance in file:
             if substance[0] == "#":
                 continue
@@ -22,8 +22,12 @@ def generateFlashCardSet(name, caching=False):
 
             substance = substance.split('/')
             substance_ger = substance[0].strip()
-            substance_eng = substance[1].strip() if len(substance) == 2 else f"{substance_ger}e"
-            substance_eng = substance_eng if substance_eng != '' else substance_ger
+            substance_eng = substance_ger
+            if len(substance) == 2:
+                if substance[1].strip() == 'e':
+                    substance_eng = f"{substance_ger}e"
+                else:
+                    substance_eng = substance[1].strip()
             substance_img = substance_eng.replace(' ', '_')
 
             # IMAGE
@@ -36,7 +40,7 @@ def generateFlashCardSet(name, caching=False):
             try:
                 pcp.download('PNG', 'tmp.png', substance_eng, 'name', overwrite=True, image_size='large')
             except:
-                print(f"Couldn't download image for {substance_eng}")
+                print(f"-> Couldn't download image for {substance_eng}")
                 continue
 
             im = Image.open("tmp.png").convert('RGBA')
@@ -77,14 +81,14 @@ def generateFlashCardSet(name, caching=False):
             try:
                 text += f"{infobox['Beschreibung']}\n"
             except:
-                print(f"Couldn't print description for {substance_ger}")
+                print(f"-> Couldn't print description for {substance_ger}")
 
             text += f"![](images/{substance_img}.png)\n"
 
             try:
                 text += f"\n# Andere Namen:\n{infobox['Andere Namen']}\n"
             except:
-                print(f"Couldn't print alternative names for {substance_ger}")
+                print(f"-> Couldn't print alternative names for {substance_ger}")
 
             text += f"\n# Informationen: \n"
             for key, value in disp_infobox.items():

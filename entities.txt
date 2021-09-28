@@ -35,25 +35,26 @@ Dimethylether/
 Ethylenglykol/Ethyleneglycole
 #
 # C3
-Kohlenstoffsuboxid
-Brenztraubensäure
-Malonsäure
+Kohlenstoffsuboxid / Carbon suboxide
+Brenztraubensäure / Pyruvic acid
+Malonsäure / Malonic acid
 Acrylamid
-Glycerintrinitrat Nitroglycerin
+Nitroglycerin
 Aceton
-Propionsäure
-Milchsäure
+Propionsäure / Propionic acid
+Milchsäure / Lactic acid
 Dimethylformamid
 Alanin
 Cystein
 Propan
-Propanol
+1-Propanol
+Isopropanol
 #
 # C4
 Pyrimidin
 Furan
 Diketen
-Maleinsäure
+Maleinsäure 
 Fumarsäure
 Thiophen
 Cytosin
