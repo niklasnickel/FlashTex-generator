@@ -1,4 +1,5 @@
 import os
+import re
 
 import wptools
 import pubchempy as pcp
@@ -68,7 +69,7 @@ def generateFlashCardSet(name, caching=False):
             # GENERATE MARKDOWN
 
             text = f"\n--- \n**Que:** {substance_ger}"
-            if substance_eng != substance_ger:
+            if substance_eng != substance_ger and substance_eng != f"{substance_ger}e":
                 text += f"\n{substance_eng}"
             text += "\n\n"
 
@@ -96,6 +97,9 @@ def generateFlashCardSet(name, caching=False):
 
         markdown += "\n---"
 
+        markdown = re.sub(r"\* {{.*}}", "", markdown)
+        # markdown = re.sub(r"\[\[.*|", "", markdown)
+
         replacements = {
             "[[Grad Celsius|°C]]": "°C",
             "[[Hektopascal|hPa]]": "hPa",
@@ -105,7 +109,14 @@ def generateFlashCardSet(name, caching=False):
             "<small>([[IUPAC]])</small>": "<small>(IUPAC)</small>",
             "([[IUPAC]])": "<small>(IUPAC)</small>",
             "([[Aminosäuren#Kanonische Aminosäuren|Dreibuchstabencode]])": "",
-            "([[Aminosäuren#Kanonische Aminosäuren|Einbuchstabencode]])": ""
+            "([[Aminosäuren#Kanonische Aminosäuren|Einbuchstabencode]])": "",
+            # "** ": "\t * ",
+            " * ": "\n\t * ",
+            # "[[": "",
+            # "]]": "",
+            " )": ")",
+            "( ": "(",
+            " ,": ","
         }
 
         for key, value in replacements.items():
@@ -115,10 +126,10 @@ def generateFlashCardSet(name, caching=False):
             f.write(markdown)
 
 
-test_substances = [
-    'Phenol', 'Anilin', 'Benzaldehyd', 'Glycin', 'Salicylsäure', 'Calciumcarbonat', 'Blausäure'
-]
-generateFlashCardSet('TestSubstances', caching=True)
+# generateFlashCardSet('TestSubstances', caching=True)
+# generateFlashCardSet('TestSubstances', caching=False)
+generateFlashCardSet('Organische Substanzen', caching=False)
+
 
 # Aminosäuren
 # amino_acids = [

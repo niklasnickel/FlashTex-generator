@@ -1,26 +1,204 @@
-Benzol / Benzene
-Anilin / Aniline
-Methionin
-Blausäure / Hydrogen Cyanide
-Calciumchlorid
-!
-
+# C1
 Tetrachlormethan
-Tribrommethan
-Trichlormethan
-Triiodmethan
-Blausäure
-Isocyansäure
+Bromoform/
+Chloroform/
+Iodoform/
+Blausäure / Hydrogen Cyanide
+Isocyansäure / Isocyanic acid
 Dichlormethan
 Diazomethan
 Formaldehyd
-Methansäure
-Kohlensäure
-Chlormethan
+Methansäure / Isocyanic acid
+Kohlensäure / Carbonic acid
+Chlormethan / Chloromethane
 Nitromethan
 Methan
-Harnstoff
-Thioharnstoff
-Methanol
+Harnstoff / Urea
+Thioharnstoff / Thiourea
+Methanol/
 Methylamin
 Guanidin
+#
+# C2
+Ethin
+Ethenon
+Glyoxal/
+Oxalsäure / Oxalic acid
+Acetonitril
+Ethen
+Ethylenoxid
+Essigsäure / Acetic acid
+Glycin
+Ethan
+Ethanol/
+Dimethylether/
+Ethylenglykol/Ethyleneglycole
+#
+# C3
+Kohlenstoffsuboxid
+Brenztraubensäure
+Malonsäure
+Acrylamid
+Glycerintrinitrat Nitroglycerin
+Aceton
+Propionsäure
+Milchsäure
+Dimethylformamid
+Alanin
+Cystein
+Propan
+Propanol
+#
+# C4
+Pyrimidin
+Furan
+Diketen
+Maleinsäure
+Fumarsäure
+Thiophen
+Cytosin
+Schweinfurter Grün
+Allantoin
+Bernsteinsäure
+Äpfelsäure
+Weinsäure
+Senfgas
+Tetrahydrofuran
+Buttersäure
+Butan
+Diethylether
+Putrescin
+Urotropin
+#
+# C5
+Purin
+Hypoxanthin
+Xanthin
+Harnsäure
+Pyridin
+Adenin
+Guanin
+Cyclopentadien
+Ribose
+Tabun
+Pentan
+#
+# C6
+Chlorbenzol C6H5-Cl
+Nicotinsäure
+Benzol
+Phenol
+Acetylendicarbonsäuredimethylester
+Aconitsäure
+Anilin
+Vitamin C
+Zitronensäure / Citric acid
+Diketogulonsäure
+Schleimsäure
+Capronsäure
+Mevalonsäure
+Glucose
+Fructose
+Mannose
+Hexan
+Mannit
+#
+# C7
+Trinitrotoluol
+Tetryl
+Benzaldehyd
+Benzoesäure
+Salicylaldehyd
+Salicylsäure
+Gallussäure
+Toluol
+Anisol
+Toluidin
+Shikimisäure
+Diacetin
+Chinasäure
+Cycloheptan
+Methylcyclohexan
+Heptan
+#
+# C8
+Phthalsäureanhydrid
+Phthalsäure
+Indol
+Styrol
+Acetophenon
+Vanillin
+Acetaminophen
+Xylol
+Coffein
+Aciclovir
+Caprylsäure
+Octan
+Octanol
+#
+# C9
+Zimtsäure
+Adrenochrom
+Phenylalanin
+Tyrosin
+Mesitylen
+Nonan
+
+# C10
+CS-Gas
+Naphthalin
+Ferrocen
+Dicyclopentadien
+Thymol
+Nicotin
+Caprinsäure
+Decan
+
+# C11-20
+Nitrofen
+Diphenylamin
+Thiamin
+Laurinsäure
+Acridin
+Anthracen
+Lidocain
+Myristinsäure
+Bisphenol
+Indigo
+Porphin
+Methylenblau
+Hyoscyamin
+Morphin
+Capsaicin
+Thebain
+#
+# C20-100
+Fuchsin
+Chinin
+Lysergsäurediethylamidtartrat
+Retinol
+Abietinsäure
+Marrubiin
+Tetrahydrocannabinol
+n-Tetracosan
+Calciferol
+Tocopherol
+Squalen
+Phyllochinon
+DL-α-Tocopherylacetat
+Bilirubin
+Cyanocobalamin
+#
+# Polymere
+Polytetrafluorethen
+Polymethylmethacrylat
+Polyethen
+Polypropen
+Polyvinylchlorid
+Polyethylenglykol
+Polycarbonat
+Polyethylenterephthalat
+Polystyrol
+Perolon / Polycaprolactam
+Nylon
+Cellulose
