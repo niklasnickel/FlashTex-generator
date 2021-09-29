@@ -3,3 +3,4 @@ Bromoform
 Chloroform
 Iodoform
 Dichlormethan/e
+Chlormethan / Chloromethane

@@ -2,99 +2,53 @@
 Blausäure / Hydrogen Cyanide
 Isocyansäure / Isocyanic acid
 Diazomethan/e
-Formaldehyd/e
 Kohlensäure / Carbonic acid
-Chlormethan / Chloromethane
 Nitromethan/e
 Harnstoff / Urea
 Thioharnstoff / Thiourea
-Methanol
 Methylamin/e
 Guanidin/e
-#
 # C2
-Ethenon/e
-Glyoxal
 Acetonitril/e
 Ethylenoxid/e
-Ethanol
-Dimethylether
 Ethylenglykol/Ethyleneglycole
-#
 # C3
 Kohlenstoffsuboxid / Carbon suboxide
 Acrylamid/e
 Nitroglycerin/e
-Aceton/e
 Dimethylformamid/e
-1-Propanol
-Isopropanol
-#
 # C4
-Pyrimidin/e
 Furan
 Diketen/e
 Thiophen
-Cytosin/e
 Schweinfurter Grün / Paris green
 Allantoin
 Senfgas / Mustard gas
 Tetrahydrofuran
-Diethylether
 Putrescin
 Urotropin
-#
 # C5
-Purin/e
-Hypoxanthin/e
-Xanthin/e
-Harnsäure / Uric acid
-Pyridin/e
-Adenin/e
-Guanin/e
-Cyclopentadien/e
 Tabun
-#
 # C6
-Nicotinsäure / Niacin
 Vitamin C
 # Diketogulonsäure !!!
 Mannit
-#
 # C7
-Tetryl
-Salicylaldehyd
-Anisol
 Shikimisäure / Shikimic acid
 Diacetin / Glyceryl diacetate
 Chinasäure / Quinic acid
-#
 # C8
 Indol
-Styrol
-Acetophenon
-Vanillin
 Acetaminophen
 # Xylol !!!
-Coffein
-Aciclovir
-Caprylsäure / Caprylic acid
-Octanol
-#
 # C9
-Zimtsäure / Cinnamic acid
 Adrenochrom
-Tyrosin
-Mesitylen/e
-#
 # C10
 CS-Gas / 2-Chlorobenzylidenemalononitrile
 Naphthalin
 Ferrocen/e
 Dicyclopentadien/e
-Thymol
 Nicotin
-#
 # C11-20
 Nitrofen
 Diphenylamin/e
@@ -106,16 +60,9 @@ Lidocain/e
 Indigo
 Porphin
 Methylenblau / Methylene blue
-Morphin/e
 Capsaicin
 Thebain
-#
 # C20-100
-Fuchsin
-Chinin
 Retinol
-Tetracosan/e
 # Tocopherol
-Squalen
 # DL-α-Tocopherylacetat
-Bilirubin

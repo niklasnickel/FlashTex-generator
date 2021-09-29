@@ -7,13 +7,19 @@ from PIL import Image, ImageDraw
 
 
 def generateFlashCardSet(name, caching=False):
+    print("")
+    print('============================================')
+    print(f'Generating card set: {name}')
+    print('============================================')
+    print('')
+
     try:
         os.makedirs(f'out/{name}/images')
     except:
         print("Overwriting existing card set!")
     markdown = f"# {name}\n"
 
-    with open('substances/entities.txt', "r") as file:
+    with open(f'substances/{name}.txt', "r") as file:
         for substance in file:
             if substance[0] == "#":
                 continue
@@ -132,9 +138,17 @@ def generateFlashCardSet(name, caching=False):
             f.write(markdown)
 
 
-# generateFlashCardSet('TestSubstances', caching=True)
-# generateFlashCardSet('TestSubstances', caching=False)
-generateFlashCardSet('Organische Substanzen', caching=False)
+generateFlashCardSet('_general', caching=False)
+exit(0)
+
+for file_name in os.listdir('substances'):
+    try:
+        generateFlashCardSet(os.path.splitext(file_name)[0], caching=False)
+    except:
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(f"-> Could non generate card set!")
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("")
 
 
 # Aminosäuren
