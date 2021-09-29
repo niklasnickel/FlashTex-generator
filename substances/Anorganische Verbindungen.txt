@@ -1,0 +1,51 @@
+Alaunstein
+Ammoniak
+Antichlor
+Bittersalz
+Bittersalz
+Blausäure / Hydrogen Cyanide
+Borax
+Calciumcarbonat
+Carborund
+Chlorkalk
+Flusssäure
+Gebrannter Kalk
+Gelbes Blutlaugensalz
+Gelöschter Kalk
+Gips
+Glaubersalz
+Hirschhornsalz
+Kalilauge
+Kaliumcyanid
+Kalk
+Kalkmilch
+Karbid
+Knallsäure
+Kochsalz
+Kohlenstoffdioxid
+Kohlenstoffdisulfid
+Kohlenstoffmonoxid
+Kohlensäure / Carbonic acid
+Kreide
+Lachgas
+Marmor
+Marshallsche Säure
+Natriumcarbonat
+Natriumcyanid
+Natron
+Natronlauge
+Ozon
+Phosgen
+Phosphorsäure
+Pottasche
+Rotes Blutlaugensalz
+Salpetersäure
+Schwefelsäure
+Schweflige Säure
+Soda
+Stuckgips
+Sulfan
+Trockeneis
+Vitriolöl
+Wasser
+Ätzkalk

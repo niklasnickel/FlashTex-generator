@@ -24,3 +24,8 @@ Thymol
 Vanillin
 Tetryl
 Zimtsäure / Cinnamic acid
+Cumol
+Cymol
+Anthranilsäure
+Hydrochinon
+Kresol

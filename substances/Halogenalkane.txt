@@ -4,3 +4,5 @@ Chloroform
 Iodoform
 Dichlormethan/e
 Chlormethan / Chloromethane
+Perchlor
+Trichlor

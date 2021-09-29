@@ -9,3 +9,6 @@ Isopropanol
 Diethylether
 Glyoxal
 Octanol
+Glycerin
+Acetaldehyd/e
+Butyraldehyd/e

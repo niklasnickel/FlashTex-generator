@@ -2,6 +2,7 @@ Ameisensäure / Formic acid
 Essigsäure / Acetic acid
 Propionsäure / Propionic acid
 Buttersäure / Butyric acid
+Valeriansäure
 Oxalsäure / Oxalic acid
 Brenztraubensäure / Pyruvic acid
 Malonsäure / Malonic acid
@@ -21,3 +22,11 @@ Laurinsäure / Lauric acid
 Myristinsäure / Myristic acid
 Abietinsäure / Abietic acid
 Caprylsäure / Caprylic acid
+Pimelinsäure
+Pelargonsäure
+Palmitinsäure
+Margarinsäure
+Stearinsäure
+Arachinsäure
+Glykolsäure
+Glyoxylsäure

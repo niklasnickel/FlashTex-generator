@@ -150,7 +150,6 @@ for file_name in os.listdir('substances'):
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("")
 
-
 # Aminosäuren
 # amino_acids = [
 #     'Alanin', 'Arginin', 'Asparagin', 'Asparaginsäure', 'Cystein', 'Glutamin', 'Glutaminsäure', 'Glycin', 'Histidin',

@@ -1,8 +1,6 @@
 # C1
-Blausäure / Hydrogen Cyanide
 Isocyansäure / Isocyanic acid
 Diazomethan/e
-Kohlensäure / Carbonic acid
 Nitromethan/e
 Harnstoff / Urea
 Thioharnstoff / Thiourea
