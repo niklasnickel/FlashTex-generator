@@ -7,11 +7,10 @@ This script automatically creates flashcards for [FlashTex](https://flashtex.app
 Under `substances` you find a list of .txt-files with chemical substances. 
 Every substance must have its own line in the format `[german name] / [english name]`. 
 If the english name differs from only appending an "e", instead of writing `Diazomethan / Diazomethane` you can simply write `Diazomethan/e`. 
-Comments start with `#`.
-The generated `.md` files and fetched images are built in the directory `out`. You can import this set into FlashTex using the gui.
+Comments start with `#`. The script will fetch the substance info from the [English](https://en.wikipedia.org/wiki/Main_Page) and [German](https://de.wikipedia.org/wiki/Wikipedia:Hauptseite) Wikipedia and download chemical structure images from [PubChem](https://pubchem.ncbi.nlm.nih.gov/)
+The generated `.md` files and fetched images are built in the directory `out`. You can import this set into FlashTex using its GUI.
 
-## Example card!
-
+## Example card
 
 ### Front side
 > Fructose
